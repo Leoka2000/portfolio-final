@@ -20,6 +20,7 @@ font-size:2.5rem;
 .individual-wrapper {
     background-color: var(--background);
     width: 23rem;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -39,7 +40,7 @@ transition: 0.5s;
     font-weight: 400;
 }
 .individual-wrapper > span {
-    font-size: 2rem;
+    font-size: 1.6rem;
     background-color: var(--background-dark);
     border-radius: 100%;
     width: 3rem;
@@ -64,7 +65,7 @@ transition: 0.5s;
     width: auto;
     display: block;
     font-weight: 100;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     background-color: var(--background-dark);
     color :rgb(43, 43, 43)
 }
@@ -116,3 +117,89 @@ text-decoration: none;
     background-color: rgb(241, 215, 252);
     color: rgb(183, 133, 190);
 }
+  
+  .video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .video-overlay video {
+    width: 90%;
+    height: 90%;
+  }
+  
+  .video-overlay button {
+    background-color: #fff;
+    position: absolute;
+    color: #000;
+    border: none;
+    right: 4rem;
+    top: 12rem;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .video-overlay button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 1000px) {
+
+    .video-overlay button {
+        background-color: #fff;
+        position: absolute;
+        color: #000;
+        border: none;
+        right: 9rem;
+        top: 9rem;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+    
+}
+
+@media screen and (max-width: 800px) {
+    .key-wrapper > span {
+        margin-top: 1rem;
+        text-align: center;
+        padding: 0.8rem 1rem 0.8rem 1rem;
+        border-radius: 16px;
+        width: auto;
+        display: block;
+        font-weight: 100;
+        font-size: 0.65rem;
+        background-color: var(--background-dark);
+        color :rgb(43, 43, 43)
+    }
+    .individual-wrapper > a {
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    color: var(--p);
+    align-items: center;
+    gap: 0.4rem;
+    transition: 0.3s;
+}
+.individual-wrapper > a > p {
+    color: var(--p);
+    font-size: 0.9rem;
+    transition: 0.3s;
+  
+}
+}
+
+  

@@ -1,0 +1,121 @@
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 4rem 2rem 2rem 2rem;
+    justify-content: center;
+    gap: 1.5rem
+}
+.hero-section h1 {
+    color: var(--h1);
+    font-size: 5rem;
+}
+.hero-section p {
+    color: var(--p);
+    font-size: 2rem;
+    line-height: 2.5rem;
+    max-width: 35rem;
+    
+}
+.icons-wrapper {
+    font-size: 2rem;
+    color: var(--p);
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    align-items: center;
+    padding: 0.8rem 0 0.5rem 0;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+   
+}
+.icons-wrapper a {
+    text-decoration: none;
+    color: var(--p);
+}
+.icons-wrapper svg {
+    transition: 0.4s;
+}
+.icons-wrapper svg:hover {
+    color: rgb(0, 0, 0);
+}
+
+
+.hero-section > button {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+
+    font-family: 'Inter', sans-serif;
+  
+    font-family: 'Roboto Condensed', sans-serif;
+  
+    font-family: 'Roboto Slab', serif;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3rem;
+    width: 10rem;
+    height: 3.5rem;
+    border-radius: 10px;
+    outline: none;
+    background-color: black;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.hero-section > button::before {
+    content: "";
+z-index: -1;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: linear-gradient(-45deg, #e81cff, #40c9ff);
+transform: translateZ(1) scale(.98);
+filter: blur(20px);
+opacity: .6;
+transition: opacity .3s;
+border-radius: inherit;
+transition: all .2s ease-in-out;
+}
+.hero-section > button::after {
+     
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: inherit;
+        border-radius: inherit;
+      }
+
+.hero-section > button:hover {
+transform: scale(1.1);
+background-color: white;
+color: black;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .hero-section > h1 {
+        color: var(--h1);
+        font-size: 2rem;
+    } 
+    .hero-section > p {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+    
+}
+
+

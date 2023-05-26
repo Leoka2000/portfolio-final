@@ -9,13 +9,13 @@
 }
 .hero-section h1 {
     color: var(--h1);
-    font-size: 5rem;
+    font-size: 4rem;
 }
 .hero-section p {
     color: var(--p);
     font-size: 2rem;
     line-height: 2.5rem;
-    width: 80%;
+    max-width: 45rem;
     
 }
 .icons-wrapper {

@@ -1,0 +1,20 @@
+import React from 'react'
+import {MdTravelExplore} from 'react-icons/md'
+import {AiFillGithub} from 'react-icons/ai'
+
+const index = () => {
+  return (
+    <a href='https://beamish-babka-ea7d99.netlify.app/' className='individual-wrapper'>
+      <span id='work-5'><MdTravelExplore/></span>
+      <h1>ScholarSearch</h1>
+      <p>This is a full stack application that consumes a REST API. ScholarSearch was made for EasyTramitt, a startup that help students from Brazil to get scholarhips abroad.</p>
+      <div className='key-wrapper'>
+        <span>Laravel / PHP</span>
+        <span></span>
+      </div>
+      <a href='https://www.facebook.com/'><AiFillGithub/><p id='hover'>- Source code</p></a>
+    </a>
+  )
+}
+
+export default index

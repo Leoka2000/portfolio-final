@@ -1,0 +1,156 @@
+.about-section {
+    display: flex;
+    gap: 0.5rem;
+    padding: 7rem 1.5rem 5rem 4rem;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    gap: 1rem;
+    
+}
+.left > h1 {
+    color: var(--h1);
+    font-size: 1.8rem;
+}
+.left > p {
+    line-height: 1.8rem;
+    color: var(--p);
+    font-size: 1rem;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 90%;
+   
+}
+
+.right {
+    display:flex;
+    flex-direction: column;
+    background-color: var(--background);
+    border-radius: 16px;
+    gap:1.6rem;
+    padding: 1.3rem;
+    justify-content: space-evenly;
+    z-index: 0;
+    width: 30rem;
+    
+}
+.right > h1 {
+    font-size: 1.9rem;
+}
+.right > p {
+    color: var(--p);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    width: 95%;
+}
+.right-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    outline: none;
+   
+    background-color: black;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+
+    font-family: 'Inter', sans-serif;
+  
+    font-family: 'Roboto Condensed', sans-serif;
+  
+    font-family: 'Roboto Slab', serif;
+}
+.right-btn::before {
+    content:"";
+z-index: -1;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+
+left: 0;
+background: linear-gradient(-45deg, #e81cff, #40c9ff);
+transform: translateZ(1) scale(.98);
+filter: blur(20px);
+opacity: 0.8;
+transition: opacity .3s;
+border-radius: inherit;
+transition: all .2s ease-in-out;
+}
+.right-btn::after {
+     
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: inherit;
+        border-radius: inherit;
+      }
+
+      .right-btn:hover {
+transform: scale(1.1);
+background-color: white;
+color: black;
+}
+
+
+
+
+@media screen and (max-width: 1150px) {
+    .right {
+        width: 35rem;
+       
+        
+    }
+    .left {
+        width: 40rem;
+        padding-left: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about-section {
+        flex-direction: column;
+        padding-left: 0rem;
+    }
+    .right {
+        width: 90%;
+
+        
+        
+    }
+    .left {
+        width: 90%;
+        padding-bottom: 1.5rem;
+
+        
+    }
+    .left > p {
+        width: 100%;
+    }
+
+    .right-btn {
+        width: 13rem;
+    }
+
+    .right > p {
+       
+        font-size: 1.2rem;
+       
+    }
+}
