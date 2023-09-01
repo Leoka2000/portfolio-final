@@ -27,7 +27,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
     gap: 1rem;
     width: 25rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -72,10 +71,8 @@ font-size: 1.1rem;
 }
 
 .error {
-  text-align:left;
+  text-align:end;
    color: red;
-   width: 100%;
-   padding-left: 1.5rem;
 }
 .success {
  color: rgb(16, 184, 80);

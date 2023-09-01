@@ -59,5 +59,5 @@ const Index = () => {
     </div>
   )
 }
-
+// https://github.com/Leoka2000/inventory-bionexusjr
 export default Index

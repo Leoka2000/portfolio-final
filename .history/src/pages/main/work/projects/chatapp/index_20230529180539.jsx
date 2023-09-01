@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import { MdInventory } from 'react-icons/md'
+import { useState } from 'react'
+import { BsFillChatDotsFill } from 'react-icons/bs'
 import { AiFillGithub } from 'react-icons/ai'
-import video from '../../../../../assets/BioNexus.mp4'
+import video from '../../../../../assets/chat-app.mp4'
 
 const Index = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -32,32 +32,26 @@ const Index = () => {
   return (
     <div>
       <div onClick={handleVideoClick} className='individual-wrapper'>
-        <span id='work-2'><MdInventory /></span>
-        <h1>BioNexusJr's Inventory</h1>
-        <p>Full stack inventory management system with CRUD functionalities that I have developed to be utilized by the members of the enterprise.</p>
+        <span id='work-4'><BsFillChatDotsFill /></span>
+        <h1>Chat app</h1>
+        <p>Live chat app application with utilization of Web Sockets</p>
         <div className='key-wrapper'>
-          <span>React</span>
-          <span>TypeScript</span>
+          <span>Socket.IO</span>
+          <span>Express</span>
           <span>Node.js</span>
-          <span>MySQL</span>
         </div>
-        <a target='_blank' href="https://github.com/Leoka2000/inventory-bionexusjr" className="github-link">
+        <a target='_blank' href="https://github.com/Leoka2000/chat-app-front-end" className="github-link">
           <AiFillGithub />
           <p id="hover">- Front end source</p>
         </a>
-        <a target='_blank' href="https://github.com/Leoka2000/inventory-app-backend" className="github-link">
+        <a target='_blank' href="https://github.com/Leoka2000/chat-app-back-end" className="github-link">
           <AiFillGithub />
           <p id="hover">- Back end source</p>
         </a>
       </div>
-      {isVideoPlaying && (
-        <div className="video-overlay">
-          <video src={video} controls autoPlay />
-          <button onClick={handleQuitVideo}>Quit</button>
-        </div>
-      )}
     </div>
   )
 }
+
 
 export default Index

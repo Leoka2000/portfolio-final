@@ -9,7 +9,6 @@ const index = () => {
       <h1>Leo's Coffee</h1>
       <p>Online commerce store for selling coffee with a virtual shopping cart feature</p>
       <div className='key-wrapper'>
-        <span>React</span>
         <span>TypeScript</span>
         <span>Form valiation</span>
       </div>
