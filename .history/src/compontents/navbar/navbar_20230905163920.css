@@ -128,11 +128,9 @@ transform: scale(1.1);
 }
 .dropdown-menu > button > p {
     font-size: 1.2rem;
-    color: black;
    
 }
 .dropdown-menu button svg {
     font-size: 1.5rem;
-    color: black;
 }
 

@@ -19,7 +19,7 @@ font-size:2.5rem;
 }
 .individual-wrapper {
     background-color: var(--background);
-    max-width: 23rem;
+    width: 23rem;
     cursor: pointer;
     display: flex;
     justify-content: space-between;

@@ -16,7 +16,7 @@ const hero = () => {
           <a href='https://github.com/Leoka2000'><AiOutlineMail/> </a>
           <a><AiFillLinkedin/></a>
         </div>
-     <Link  className='hero-btn' to="contact" spy={true} smooth={true} offset={100} duration={500}>Hire me</Link>
+        <button className='hero-btn'> <Link to="contact" spy={true} smooth={true} offset={100} duration={500}>Hire me</Link></button>
       </section>
     </>
   )

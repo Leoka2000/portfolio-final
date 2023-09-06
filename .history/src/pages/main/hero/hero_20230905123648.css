@@ -98,7 +98,7 @@ transition: all .2s ease-in-out;
         border-radius: inherit;
       }
 
-.hero-section > a:hover {
+.hero-section > button:hover {
 transform: scale(1.1);
 background-color: white;
 color: black;

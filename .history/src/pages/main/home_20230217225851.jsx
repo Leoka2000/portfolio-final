@@ -9,7 +9,6 @@ import Contact from '../contact/contact'
 const Home = () => {
   return (
     <>
-    
       <Hero/>
       <Work/>
       <About/>

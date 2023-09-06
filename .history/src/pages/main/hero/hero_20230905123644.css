@@ -85,7 +85,7 @@ transition: opacity .3s;
 border-radius: inherit;
 transition: all .2s ease-in-out;
 }
-.hero-section > a::after {
+.hero-section > button::after {
      
         content: "";
         z-index: -1;
@@ -98,7 +98,7 @@ transition: all .2s ease-in-out;
         border-radius: inherit;
       }
 
-.hero-section > a:hover {
+.hero-section > button:hover {
 transform: scale(1.1);
 background-color: white;
 color: black;
