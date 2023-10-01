@@ -18,8 +18,7 @@ const firebaseConfig = {
   measurementId: "G-0YRDJZY4KD"
 
 };
-
-
+console.log(process.env.REACT_APP_API_KEY)
   
   
 

@@ -120,26 +120,28 @@ color: black;
     }
     .left {
         width: 40rem;
-        padding-left: 0rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 }
 
 @media screen and (max-width: 1000px) {
     .about-section {
         flex-direction: column;
-        padding: 7rem 0.5rem 5rem 0.5rem;
+        padding: 7rem 1.5rem 5rem 1.5rem;
         align-items: center;
+        
+
     }
     .right {
-        width: 90%;
-   
+        width: 100%;
         
 
         
         
     }
     .left {
-        width: 90%;
+        width: 100%;
         padding-bottom: 1.5rem;
 
         

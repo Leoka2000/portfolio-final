@@ -127,8 +127,10 @@ color: black;
 @media screen and (max-width: 1000px) {
     .about-section {
         flex-direction: column;
-        padding: 7rem 0.5rem 5rem 0.5rem;
+        padding: 7rem 0rem 5rem 0rem;
         align-items: center;
+        
+
     }
     .right {
         width: 90%;

@@ -9,7 +9,7 @@ const hero = () => {
   return (
     <>
       <section className='hero-section'>
-        <h1>Hi, I'm Leo, a full-stack web developer who specializes in front-end development</h1>
+        <h1>Hi, I'm Leo, a front-end developer</h1>
         <p>I build things for the web primarily using React. Currently living in Hungary</p>
         <div className='icons-wrapper'>
           <a target='_blank' href="https://github.com/Leoka2000"><AiFillGithub/></a>

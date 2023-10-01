@@ -106,10 +106,7 @@ color: black;
 
 
 
-@media screen and (max-width: 900px) {
-    .hero-section {
-        padding: 4rem 1.5rem 2rem 1.5rem;
-    }
+@media screen and (max-width: 1000px) {
     .hero-section > h1 {
         color: var(--h1);
         font-size: 1.7rem;

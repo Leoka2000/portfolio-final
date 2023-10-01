@@ -20,11 +20,11 @@ function Navbar() {
     if (dropDown) {
       document.addEventListener('mousedown', handleClickOutside);
     } else {
- 
+      // Remove event listener when dropdown is closed
       document.removeEventListener('mousedown', handleClickOutside);
     }
 
-
+    // Cleanup the event listener when the component unmounts
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };

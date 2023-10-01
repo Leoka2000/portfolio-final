@@ -11,20 +11,21 @@ function Navbar() {
 
   // Close dropdown when user clicks outside of it
   useEffect(() => {
-    const handleClickOutside = (event) => {
+    function handleClickOutside(event) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setDropDown(false);
       }
     }
 
+    // Add event listener when dropdown is open
     if (dropDown) {
       document.addEventListener('mousedown', handleClickOutside);
     } else {
- 
+      // Remove event listener when dropdown is closed
       document.removeEventListener('mousedown', handleClickOutside);
     }
 
-
+    // Cleanup the event listener when the component unmounts
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };

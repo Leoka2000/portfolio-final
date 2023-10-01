@@ -2,6 +2,7 @@
     display: flex;
     gap: 0.5rem;
     padding: 7rem 1.5rem 5rem 4rem;
+    justify-content: center;
 }
 
 .left {
@@ -43,7 +44,7 @@
 }
 .right > p {
     color: var(--p);
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     line-height: 1.8rem;
     width: 95%;
 }
@@ -126,10 +127,14 @@ color: black;
 @media screen and (max-width: 1000px) {
     .about-section {
         flex-direction: column;
-        padding-left: 0rem;
+        padding: 7rem 0rem 5rem 0rem;
+        align-items: center;
+        
+
     }
     .right {
-        width: 90%;
+        width: 100%;
+        
 
         
         
